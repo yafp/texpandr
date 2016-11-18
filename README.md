@@ -1,7 +1,7 @@
 # texpandr
 
 ## Function
-Texpandr is a simple text expander for Linux. It is sort of like Autokey, except it works off of text files that you put in you `~/.texpandr` directory. Texpandr is a bash script that uses `xclip`, `xdotool`, and `zenity` to let you type an abbreviation for something and it expands to whatever you have in the matching text file.
+Texpandr is a simple text expander for Linux. It is sort of like Autokey, except it works off of text files that you put in you `~/.texpandr` directory. Texpandr is a bash script that uses `xclip`, `xdotool` and `zenity` to let you select an abbreviation for something and it expands to whatever you have in the matching text file.
 
 ## Requirements
 - xdotool
@@ -12,7 +12,7 @@ Texpandr is a simple text expander for Linux. It is sort of like Autokey, except
 - Download the latest version from https://github.com/yafp/texpandr/archive/master.zip
 - Extract the archive
 - Copy `texpandr.sh` to your desired location
-- Define a shortcut to trigger/execute texpandr.sh
+- Define a shortcut to trigger/execute `texpandr.sh`
 - Create an abbreviation directory `.texpandr` in your HOME directory
 
 ## Usage
@@ -23,9 +23,9 @@ To use Texpandr:
 * Start writing in a random application
 * Put your cursor where you want your abbreviation to be pasted
 * Type keyboard shortcut you set up
-* A zenity window will appear showing a list of your abbreviation
+* A zenity window will appear showing a list of your abbreviations
 * Select an abbreviation and hit Enter (or click "OK")
-* The contents of ~/.texpandr/SELECTED-ABBREVIATION.txt is pasted into your document
+* The contents of `~/.texpandr/SELECTED-ABBREVIATION.txt` is pasted into your document
 
 
 ## Credit
