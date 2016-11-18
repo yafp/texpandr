@@ -16,7 +16,7 @@ Texpandr is a simple text expander for Linux. It is sort of like Autokey, except
 - Create an abbreviation directory `.texpandr` in your HOME directory
 
 ## Usage
-The text expansion files reside in your `~/.texpandr` directory. Name the files in the format of `abbreviation.txt` where abbreviation is the thing you want to type and the content of the file is what you want to have pasted into your document.
+The text expansion files reside in your `~/.texpandr` directory. Name the files in the format of `abbreviation.txt` where abbreviation is the thing you want to select from the list and the content of the file is what you want to have pasted at your current cursor position.
 
 To use Texpandr:
 
