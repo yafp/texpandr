@@ -1,16 +1,21 @@
 #!/bin/bash
 
 # NAME:				Texpandr
+#
 # FUNCTION:			A simple bash based text-expander for Linux
 # URL:				https://github.com/yafp/texpandr/
-# Inspired by: 		https://github.com/leehblue/texpander
+#
+# INSPIRED BY: 		https://github.com/leehblue/texpander
+# CHANGES:			- Added Hide header option to zenity command
+#					- support for blank in abbreviation filenames (adding -Q & eval)
 
 APPNAME="Texpandr"
-APPVERSION="20161118.01"
+APPVERSION="20161118.02"
 
 base_dir="${HOME}/.texpandr/"
-abbrvs=$(ls $base_dir)
-name=$(zenity --list --title="$APPNAME" --hide-header --column=Abbreviations $abbrvs)
+
+abbrvs=$(ls $base_dir -Q)
+name=$(eval zenity --list --title="$APPNAME" --hide-header --column=Abbreviations $abbrvs)
 
 path=$base_dir$name
 
