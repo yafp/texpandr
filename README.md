@@ -1,3 +1,4 @@
+![logo](https://raw.githubusercontent.com/yafp/texpandr/master/doc/texpandr_logo_64.png) texpandr
 # texpandr
 
 ## Function
